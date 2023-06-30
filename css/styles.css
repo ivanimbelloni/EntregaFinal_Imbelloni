@@ -15,15 +15,15 @@ body {
     height: 100vh;
 
 }
-.header{
+header{
     background-color: #84b6f4;
     padding: 10px;
 }
-.header .logo_header{
+header .logo_header{
     display: flex;
     justify-content: center;
 }
-.header .logo_header img {
+header .logo_header img {
     display: flex;
     max-width: 100%;
     transition: all 0.3s;
@@ -31,13 +31,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-.header .header_menu{
+header .header_menu{
     margin: 10px;
 }
-.header .header_menu #check-menu{
+header .header_menu #check-menu{
     display: none;
 }
-.header_menu .menu_icon label{
+header .header_menu .menu_icon label{
     display: flex;
     width: 48px;
     height: 48px;
@@ -46,18 +46,20 @@ body {
     align-items: center;
     
 }
-.header .header_menu .nav-link{
+header .header_menu .nav-link{
     width: 100%;
+    
     display: none;
 }
 
-.header .header_menu .nav-link ul{
+header .header_menu .nav-link ul{
     display: flex;
     flex-direction: column;
     width: 100%; 
+    gap: 10px;
     list-style: none;
 }
-.header .header_menu .nav-link li{
+header .header_menu .nav-link li{
     display: flex;
     border-radius: 7px ;
     padding:  5px 7px;
@@ -66,13 +68,13 @@ body {
     justify-content: center;
     
 }
-.header .header_menu .nav-link a {
+header .header_menu .nav-link a {
     text-decoration: none;
     font-weight: bold;
     color: black ;
     font-size: 1.75rem;
 }
-.header .header_menu .nav-link li:hover{
+header .header_menu .nav-link li:hover{
     transition: 0.7s;
     background-color: #7b9bf1;
 }
@@ -81,7 +83,7 @@ body {
     width: 100%;
     height: auto;
 }
-.main {
+main {
     box-sizing: content-box;
     background-color: #b0c2f2;
     padding: 10px;
@@ -182,19 +184,19 @@ body {
 .checkbox [type=checkbox]{
     cursor: pointer;
 }
-.footer{
+footer{
     display: flex;
     flex-direction: column;
     background-color: #84b6f4;
     align-content: center;
 
 }
-.footer .redes-link ul{
+footer .redes-link ul{
     display: flex;
     justify-content: center;
     list-style: none;
 }
-.footer .redes-link li{
+footer .redes-link li{
     display: flex;
     width: 100%;
     background-color: #b0c2f2;
@@ -203,19 +205,19 @@ body {
     padding:  10px 10px;
     margin: 10px;
 }
-.footer .redes-link li:hover{
+footer .redes-link li:hover{
     transition: 0.7s;
     background-color: #7b9bf1;
     cursor: pointer;
 }
-.footer .redes-link a{
+footer .redes-link a{
     text-decoration: none;
     font-weight: bold;
     color: black ;
     font-size: 1rem;
 }
 
-.footer h4{
+footer h4{
     display: flex;
     align-items: baseline;
     justify-content: end;
@@ -223,11 +225,12 @@ body {
 }
 /*version para ordenador*/
 @media (min-width:1000px) {
-    .header .header_menu .nav-link ul{
+    header .header_menu .nav-link ul{
     flex-direction: row;
+    gap: 5px;
     }
 
-    .header .header_menu .nav-link li{
+    header .header_menu .nav-link li{
         flex-grow: 1;
         padding: 5px 5px;   
     };
