@@ -32,6 +32,7 @@ header .logo_header img {
     align-items: center;
 }
 header .header_menu{
+    margin: 0px auto;
     margin: 10px;
 }
 header .header_menu #check-menu{
@@ -55,6 +56,7 @@ header .header_menu .nav-link{
 header .header_menu .nav-link ul{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%; 
     gap: 10px;
     list-style: none;
@@ -84,15 +86,19 @@ header .header_menu .nav-link li:hover{
     height: auto;
 }
 main {
-    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
     background-color: #b0c2f2;
-    padding: 10px;
     min-height: 100%;
-    padding-left: 15px;
+    padding: 20px;
 }
 /*--------------page_index--------------------------*/
 
+.sec_noticias{
+    margin: 0px auto;
+}
 .sec_noticias .title {
+
     font-size: 1.5rem;
     text-decoration: underline ;
     color: black;
@@ -111,47 +117,7 @@ main {
     padding-left: 15px;
     justify-items: center;
 }
-.nuevos_avances {
-    display: flex;
-    flex-direction: column;
-}
-.nuevos_avances .block_nuevos{
-    width: 90%;
-    display: grid;
-    grid-template-columns: 40% 40% 20%;
-    grid-gap: 10px;
-    margin: 10px;
-}
-.block_nuevos .notice_1{
-    background-color: antiquewhite;
-    width:100%;
-    height: 100px;
-}
-.block_nuevos .notice_2{
-    background-color: antiquewhite;
-    width:100%;
-    height: 100px;
-}
-.block_nuevos .notice_3{
-    background-color: antiquewhite;
-    width:100%;
-    height: 100px;
-}
-.block_nuevos .notice_4{
-    background-color: antiquewhite;
-    width:100%;
-    height: 100px;
-}
-.block_nuevos .notice_5{
-    background-color: antiquewhite;
-    width:100%;
-    height: 100px;
-}
-.block_nuevos .notice_6{
-    background-color: antiquewhite;
-    width:100%;
-    height: 100px;
-}
+
 /*--------------page_contacto--------------------------*/
 .info_contacto{
     padding: 10px;
@@ -227,6 +193,8 @@ footer h4{
 @media (min-width:1000px) {
     header .header_menu .nav-link ul{
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
     }
 

@@ -1,2 +1,2 @@
-  header #84b6f4
+  header y footer #84b6f4
   botones #b0c2f2
