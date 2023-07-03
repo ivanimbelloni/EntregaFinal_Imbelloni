@@ -114,9 +114,38 @@ main {
 }
 .sec_noticias article{
     padding-top: 20px;
-    padding-left: 15px;
+    padding-left: 20px;
     justify-items: center;
 }
+
+/*--------------page_nosotros--------------------------*/
+
+.informacion_nosotros{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.informacion_nosotros .title{
+    display: flex;
+    font-size: 1.5rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+}
+.informacion_nosotros .texto_nosotros{
+    display: flex;
+    padding: 20px;
+    justify-items: center;
+   
+}
+
+
+
+
+
 
 /*--------------page_contacto--------------------------*/
 .info_contacto{
