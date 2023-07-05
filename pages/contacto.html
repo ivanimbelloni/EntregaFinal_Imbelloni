@@ -31,60 +31,75 @@
         </div>
     </header>
     <main >
-        <div class="sub_titulo">
-            <h2>
-                Información de contacto
-            </h2>
-        </div>
         <div class="info_contacto">   
-            <form method="post">
-                <section>
-                    <H3>
-                        Nombre
-                    </H3>
-                    <input type="name" required>
-                 </section>
-                <section>
-                    <H3>
-                         Apellido
-                    </H3>
-                    <input type="lastname" required>
-                </section>
-        
-                <section>
-                     <H3>
-                        Correo electronico
-                     </H3>
-                    <input type="email" name="email" id="email de contacto" required> 
-                </section>
-                <section class="espacio_razon">
-                    <H3>
-                        Razon de contacto
-                    </H3>
-                    <input type="razon" 
-                    spellcheck="true" 
-                    minlength="20"
-                    aria-multiline="true"
-                    maxlength="200"
-                    size="100">
+            <div class="sub_titulo">
+                <h2>
+                    Información de contacto
+                </h2>
+            </div>
+            <div class="bloque_form">
+
+                <form method="post">
+                    <section class="nombre">
+                        <div class="dato">
+                             <H3>
+                            Nombre
+                            </H3>
+                        </div>
+                       <div class="input">
+                           <input type="name" required>
+                       </div>
+                    </section>
+                    <section class="apellido">
+                        <div class="dato">
+                            <H3>
+                                Apellido
+                            </H3>
+                        </div>
+                        <div class="input">
+                            <input type="lastname" required>
+                        </div>
+                    </section>
                     
-                </section>
-                <section>
-                    <div class="checkbox">
-                        <input type="checkbox" name="condiciones" id="contrato" required>
-                        <h3> 
-                            Esta de acuerdo con recibir correos informativos
-                        </h3>
-                    
-                    </div>
-                </section>
-                <section>
-                    <div class="btn">
-                        <input type="submit" value="Enviar" >
-                    </div>
-                </section>
-            </div>        
-        </form>     
+                    <section class="correo">
+                        <div class="dato">
+                            <H3>
+                                Correo electronico
+                            </H3>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="email" id="email de contacto" required> 
+                        </div>
+                    </section>
+                    <section class="espacio_razon">
+                        <div class="dato">
+                            <H3>
+                                Razon de contacto
+                            </H3>
+                        </div>
+                        <div class="input">
+                            <input type="razon" spellcheck="true" minlength="20" aria-multiline="true" maxlength="200" > 
+                        </div>
+                    </section>
+                    <section class="terminos">
+                        <div class="checkbox">
+                            
+                            <input type="checkbox" name="condiciones" id="contrato" required>
+                            <h3> 
+                                Esta de acuerdo con recibir correos informativos
+                            </h3>
+                        
+                        </div>
+                    </section>
+                    <section >
+                        <div class="btn-enviar">
+                            <input type="submit" value="Enviar" >
+
+                        </div>
+                    </section>
+                </form>     
+            </div>
+        </div>        
     </main>
     
     <footer >

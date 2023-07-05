@@ -90,6 +90,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #b0c2f2;
+    align-content: center;
     min-height: 100%;
     padding: 20px;
 }
@@ -253,6 +254,9 @@ footer h4{
 }
 .informacion_nosotros .title{
     display: flex;
+
+}
+.informacion_nosotros .title h2{
     font-size: 1.5rem;
     text-decoration: underline ;
     color: black;
@@ -272,33 +276,152 @@ footer h4{
 
 /*--------------page_contacto--------------------------*/
 .info_contacto{
-    padding: 10px;
-}
-.info_contacto section{
-    padding: 10px;
-}
-.info_contacto .espacio_razon input{
     display: flex;
-    min-height: 150px;
-    max-width: 90%;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
 }
-.info_contacto .btn input[type=submit]{
+.info_contacto .sub_titulo{
+    display: flex ;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+.info_contacto .sub_titulo h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0,306rem;
+    text-decoration: underline;
+}
+.info_contacto .bloque_form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;    
+}
+
+.info_contacto .bloque_form section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.info_contacto .bloque_form .nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.info_contacto .bloque_form .nombre .dato{
+    display: flex;
+    justify-content: center;
+}
+.info_contacto .bloque_form .nombre .input {
+    display: flex;
+    justify-content: center;
+}
+.info_contacto .bloque_form .apellido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.info_contacto .bloque_form .apellido .dato{
+    display: flex;
+    justify-content: center;
+}
+.info_contacto .bloque_form .apellido .input {
+    display: flex;
+    justify-content: center;
+}
+.info_contacto .bloque_form .correo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.info_contacto .bloque_form .correo .dato{
+    display: flex;
+    justify-content: center;
+}
+.info_contacto .bloque_form .correo .input {
+    display: flex;
+    justify-content: center;
+}.info_contacto .bloque_form .espacio_razon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.info_contacto .bloque_form .espacio_razon .dato{
+    display: flex;
+    justify-content: center;
+}
+.info_contacto .bloque_form .espacio_razon .input {
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+}
+.info_contacto .bloque_form .terminos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.info_contacto .bloque_form .terminos .checkbox {
+    display: flex;
+    justify-content: center;
+}
+.info_contacto .bloque_form .terminos  {
+    display: flex;
+    justify-content: center;
+}
+.info_contacto section h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: 0,306rem;
+    text-decoration: underline;
+    max-width: 500px ;
+
+}
+
+
+
+
+
+.info_contacto .bloque_form .btn-enviar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.info_contacto .btn-enviar input[type=submit]{
     text-decoration: none;
     width: 100px;
     font-size: 25px;
+    font-weight: bolder;
     color: black;
-    border-radius: 2.5px;
+    border-radius: 5px;
     background-color:#84b6f4;
     cursor: pointer;
 }
 
-.checkbox{
+.info_contacto .bloque_form .checkbox{
     display: flex;
     align-items: center;
 }
-.checkbox h3{
+.info_contacto .bloque_form .checkbox h3{
     padding-left: 5px;
+    font-size: .8rem;
+    font-weight: lighter;
 }
-.checkbox [type=checkbox]{
+.info_contacto .bloque_form .checkbox [type=checkbox]{
     cursor: pointer;
 }
