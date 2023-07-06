@@ -97,6 +97,7 @@ main {
 footer{
     display: flex;
     width: 100%;
+    padding: 20px;
     flex-direction: column;
     background-color: #84b6f4;
     align-content: center;
@@ -137,8 +138,11 @@ footer h4{
     display: flex;
     align-items: baseline;
     justify-content: center;
-    padding: 2.5%;
+    font-weight: lighter;
+    font-size: 0.6rem;
+
 }
+
 /*version para ordenador*/
 @media (min-width:1000px) {
     header .header_menu .nav-link ul{
@@ -201,10 +205,19 @@ footer h4{
     flex-direction: column;
 
 }
+.sec_noticias .nuevos_avances .bloque .parrafo{
+    display: flex;
+    justify-content: center;
+}
+.sec_noticias .nuevos_avances .bloque .parrafo p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
 .sec_noticias .nuevos_avances .bloque .imagen {
     display: flex;
     justify-content: center;
-    padding: 5px;
 }
 
 
@@ -222,10 +235,18 @@ footer h4{
     flex-direction: column;
    
 }
+.sec_noticias .ultimo_lanzamiento .bloque .parrafo{
+    display: flex;
+    justify-content: center;
+}
+.sec_noticias .ultimo_lanzamiento .bloque .parrafo p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: justify;
+}
 .sec_noticias .ultimo_lanzamiento .bloque .imagen {
     display: flex;
     justify-content: center;
-    padding: 5px;
 }
 .sec_noticias .ultimo_lanzamiento .bloque .imagen img{
     height: 300px;
@@ -233,13 +254,24 @@ footer h4{
 
 
 }
+/*version para ordenador*/
+
 @media (min-width:1000px) {
+    
     .sec_noticias .nuevos_avances .bloque{
         flex-direction: row;
     }
     .sec_noticias .ultimo_lanzamiento .bloque{
         flex-direction: row;
     }
+    .sec_noticias .nuevos_avances .bloque .parrafo{
+        padding-right: 40px;
+    }
+    .sec_noticias .ultimo_lanzamiento .bloque .parrafo{
+        padding-right: 40px;
+    }
+
+
 }
 
 /*--------------page_nosotros--------------------------*/
@@ -268,7 +300,134 @@ footer h4{
     justify-items: center;
    
 }
+/*--------------page_redes--------------------------*/
+.redes{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+ .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+ .title h2{
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+    padding-left: 10px;
+}
+.redes .instagram {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 
+.redes .instagram .nombre_red{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.redes .instagram .nombre_red h3{
+    font-size: 2rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+
+}
+.redes .instagram .icono{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    filter: drop-shadow(0 0 20px #c12992);
+
+}
+.redes .instagram .icono:hover{
+    transform: scale(1.1);
+    transition: .8s;
+}
+
+
+.redes .instagram .icono img{
+    height: 300px;
+}
+.redes .youtube {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.redes .youtube .nombre_red{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.redes .youtube .nombre_red h3{
+    font-size: 2rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+
+}
+.redes .youtube .icono{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    filter: drop-shadow(0 0 20px #ff0000);
+
+}
+.redes .youtube .icono:hover{
+    transform: scale(1.1);
+    transition: .8s;
+}
+
+.redes .youtube .icono img{
+    height: 300px;
+}
+.redes .whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.redes .whatsapp .nombre_red{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.redes .whatsapp .nombre_red h3{
+    font-size: 2rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+}
+.redes .whatsapp .icono{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    filter: drop-shadow(0 0 20px #01e676);
+}
+.redes .whatsapp .icono:hover{
+    transform: scale(1.1);
+    transition: .8s;
+}
+.redes .whatsapp .icono img{
+    height: 300px;
+}
+
+/*version para ordenador*/
+
+@media (min-width:1000px) {
+    .redes{
+        flex-direction:row ;
+        flex-grow: 1;
+        align-content:center;
+    }
+}
 
 
 
@@ -392,11 +551,6 @@ footer h4{
     max-width: 500px ;
 
 }
-
-
-
-
-
 .info_contacto .bloque_form .btn-enviar{
     display: flex;
     justify-content: center;
