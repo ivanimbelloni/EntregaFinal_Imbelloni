@@ -166,13 +166,14 @@ footer .derechos h4{
 
 }
 
+
 /*version para ordenador*/
 @media (min-width:1000px) {
     header .header_menu .nav-link ul{
         flex-direction: row;
         justify-content: center;
-    align-items: center;
-    gap: 5px;
+        align-items: center;
+        gap: 5px;
     }
 
     header .header_menu .nav-link li{
@@ -302,6 +303,16 @@ footer .derechos h4{
     align-items: center;
 
 }
+.informacion_nosotros .title{
+    display: flex;
+
+}
+.informacion_nosotros .title h2{
+    font-size: 4rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+}
 .informacion_nosotros .texto_nosotros{
     display: flex;
     padding: 20px;
@@ -367,6 +378,34 @@ footer .derechos h4{
     justify-content: center;
     flex-direction: column;
     align-content: center;
+}
+.redes .instagram {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*--------------page_redes--------------------------*/
+.redes{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+ .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+ .title h2{
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+    padding-left: 10px;
 }
 .redes .instagram {
     display: flex;
@@ -488,6 +527,18 @@ footer .derechos h4{
     align-content: center;
 }
 
+.info_contacto .sub_titulo{
+    display: flex ;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+.info_contacto .sub_titulo h2{
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 0,306rem;
+    text-decoration: underline;
+}
 .info_contacto .bloque_form{
     display: flex;
     width: 100%;
