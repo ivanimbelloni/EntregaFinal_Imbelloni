@@ -50,8 +50,10 @@ header .header_menu .menu_icon label{
 }
 header .header_menu .nav-link{
     width: 100%;
-    
+    background-color: #84b6f4;
+    position: absolute;
     display: none;
+    right: 0;
 }
 
 header .header_menu .nav-link ul{
@@ -289,7 +291,7 @@ footer h4{
 
 }
 .informacion_nosotros .title h2{
-    font-size: 1.5rem;
+    font-size: 4rem;
     text-decoration: underline ;
     color: black;
     font-weight: bold;    
@@ -448,7 +450,7 @@ footer h4{
     align-content: center;
 }
 .info_contacto .sub_titulo h2{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bolder;
     letter-spacing: 0,306rem;
     text-decoration: underline;
