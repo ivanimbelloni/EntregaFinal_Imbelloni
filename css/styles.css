@@ -3,7 +3,6 @@
 *{
     box-sizing: border-box;
     margin: 0px;
-    padding: 0px;
     font-size: 1.25rem; 
     font-family: 'PT Sans', sans-serif;
 }
@@ -182,21 +181,25 @@ footer h4{
       
 }
 .sec_noticias .title h2{
-    font-size: 4.0rem;
+    font-size: 3rem;
     text-decoration: underline ;
     color: black;
     font-weight: bold;  
 }
-.sec_noticias .sub_titulo {
+.sec_noticias .sub_titulo{
+    display: flex;
+    justify-content: center;
+}
+.sec_noticias .sub_titulo h3{
     font-size: 1.2rem;
     text-decoration: underline ;
     color: black;
     font-weight: bold;    
-    padding-left: 10px;
 }
 .sec_noticias article{
-    padding-top: 20px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-items: center;
     margin: 10px;
 }
@@ -211,6 +214,7 @@ footer h4{
 .sec_noticias .nuevos_avances .bloque .parrafo{
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 .sec_noticias .nuevos_avances .bloque .parrafo p{
     font-size: 0.8rem;
@@ -292,7 +296,7 @@ footer h4{
 
 }
 .informacion_nosotros .title h2{
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: underline ;
     color: black;
     font-weight: bold;    
@@ -319,7 +323,7 @@ footer h4{
 }
  .title h2{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: underline ;
     color: black;
     font-weight: bold;    
@@ -451,8 +455,9 @@ footer h4{
     align-content: center;
 }
 .info_contacto .sub_titulo h2{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bolder;
+    text-align: center;
     letter-spacing: 0,306rem;
     text-decoration: underline;
 }
