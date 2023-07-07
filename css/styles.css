@@ -12,10 +12,14 @@ html {
     height: 100%;
 }
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     
 }
 header{
+    display: flex;
+    flex-direction: column;
     background-color: #84b6f4;
     padding: 10px;
 }
@@ -32,28 +36,32 @@ header .logo_header img {
     align-items: center;
 }
 header .header_menu{
-    margin: 0px auto;
     margin: 10px;
 }
 header .header_menu #check-menu{
     display: none;
 }
-header .header_menu .menu_icon label{
+header .header_menu .menu_icon{
     display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+}
+header .header_menu .menu_icon label{
     width: 48px;
     height: 48px;
     cursor: pointer;
-    padding: 20px;
-    align-items: center;
     
 }
 header .header_menu .nav-link{
     width: 100%;
-    background-color: #84b6f4;
+    background-color: #84b6f4 ;
     position: absolute;
     display: none;
     right: 0;
     z-index: 2;
+    padding: 10px;
 }
 
 header .header_menu .nav-link ul{
@@ -62,6 +70,7 @@ header .header_menu .nav-link ul{
     justify-content: center;
     width: 100%; 
     gap: 10px;
+    padding: 0px;
     list-style: none;
 }
 header .header_menu .nav-link li{
@@ -85,6 +94,7 @@ header .header_menu .nav-link li:hover{
 }
 #check-menu:checked ~ .nav-link {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
 }
@@ -93,7 +103,7 @@ main {
     flex-direction: column;
     background-color: #b0c2f2;
     align-items: center;
-    min-height: 100%;
+    height: auto;
     padding: 20px;
 }
 main .title {
@@ -111,6 +121,7 @@ main .title {
  }
 footer{
     display: flex;
+    height: auto;
     width: 100%;
     padding: 20px;
     flex-direction: column;
@@ -170,16 +181,23 @@ footer .derechos h4{
 /*version para ordenador*/
 @media (min-width:1000px) {
     header .header_menu .nav-link ul{
+        width: 70%;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 5px;
+    }
+    header .header_menu .menu_icon{
+        padding: 0px 15% 0px 15%;
     }
 
     header .header_menu .nav-link li{
         flex-grow: 1;
         padding: 5px 5px;   
     }
+   main{
+    padding: 0px 15% 0px 15%;
+   }
     footer .redes-link ul{
         flex-direction: row;
     }
@@ -429,10 +447,8 @@ footer .derechos h4{
     transform: scale(1.1);
     transition: .8s;
 }
-
-
 .redes .instagram .icono img{
-    height: 300px;
+    width: 100%;
 }
 .redes .youtube {
     display: flex;
@@ -463,7 +479,7 @@ footer .derechos h4{
     transition: .8s;
 }
 .redes .youtube .icono img{
-    height: 300px;
+    width: 100%;
 }
 .redes .whatsapp {
     display: flex;
@@ -493,7 +509,7 @@ footer .derechos h4{
     transition: .8s;
 }
 .redes .whatsapp .icono img{
-    height: 300px;
+    width: 100%;
 }
 
 /*version para ordenador*/
