@@ -13,7 +13,7 @@ html {
 }
 body {
     height: 100vh;
-
+    
 }
 header{
     background-color: #84b6f4;
@@ -92,10 +92,23 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #b0c2f2;
-    align-content: center;
+    align-items: center;
     min-height: 100%;
     padding: 20px;
 }
+main .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+ }
+ main .title h2{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline ;
+    color: black;
+    font-weight: bold;    
+ }
 footer{
     display: flex;
     width: 100%;
@@ -106,8 +119,15 @@ footer{
     justify-content: center;
     
 }
+footer .redes-link{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
 footer .redes-link ul{
-    width: 100%;
+    width: 70% ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,11 +155,12 @@ footer .redes-link a{
     color: black ;
     font-size: 1rem;
 }
-
-footer h4{
+footer .derechos{
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: end;
+}
+footer .derechos h4{
     font-weight: lighter;
     font-size: 0.6rem;
 
@@ -169,28 +190,18 @@ footer h4{
         justify-content: end;
     }
 }
+
 /*--------------page_index--------------------------*/
 
 .sec_noticias{
     margin: 0px auto;
-}
-.sec_noticias .title {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-      
-}
-.sec_noticias .title h2{
-    font-size: 3rem;
-    text-decoration: underline ;
-    color: black;
-    font-weight: bold;  
 }
 .sec_noticias .sub_titulo{
     display: flex;
     justify-content: center;
 }
 .sec_noticias .sub_titulo h3{
+    display: flex;
     font-size: 1.2rem;
     text-decoration: underline ;
     color: black;
@@ -291,22 +302,64 @@ footer h4{
     align-items: center;
 
 }
-.informacion_nosotros .title{
-    display: flex;
-
-}
-.informacion_nosotros .title h2{
-    font-size: 3rem;
-    text-decoration: underline ;
-    color: black;
-    font-weight: bold;    
-}
 .informacion_nosotros .texto_nosotros{
     display: flex;
     padding: 20px;
     justify-items: center;
    
 }
+/*--------------page_productos--------------------------*/
+.bloque_productos {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    
+}
+.bloque_productos .producto{
+    display: flex;
+    margin: 20px;
+    background-color: #7b9bf1;
+    width: max-content;    
+    flex-direction: column;
+    align-content: center;
+}
+.bloque_productos .producto .prod_nombre{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.bloque_productos .producto .prod_nombre h3{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic
+}
+.bloque_productos .producto .prod_imagen{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+
+    filter: drop-shadow(0 0 10px white);
+
+}
+.bloque_productos .producto .prod_imagen img{
+    width: 260px;
+    height: 260px;
+}
+/*version para ordenador*/
+
+@media (min-width:1000px) {
+    .bloque_productos {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+        padding: 10px;
+        
+    }
+}
+
 /*--------------page_redes--------------------------*/
 .redes{
     display: flex;
@@ -314,20 +367,6 @@ footer h4{
     justify-content: center;
     flex-direction: column;
     align-content: center;
-}
- .title {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 20px;
-}
- .title h2{
-    text-align: center;
-    font-size: 3rem;
-    text-decoration: underline ;
-    color: black;
-    font-weight: bold;    
-    padding-left: 10px;
 }
 .redes .instagram {
     display: flex;
@@ -448,19 +487,7 @@ footer h4{
     flex-direction: column;
     align-content: center;
 }
-.info_contacto .sub_titulo{
-    display: flex ;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-}
-.info_contacto .sub_titulo h2{
-    font-size: 3rem;
-    font-weight: bolder;
-    text-align: center;
-    letter-spacing: 0,306rem;
-    text-decoration: underline;
-}
+
 .info_contacto .bloque_form{
     display: flex;
     width: 100%;
