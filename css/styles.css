@@ -360,6 +360,11 @@ footer .derechos h4{
     width: 260px;
     height: 260px;
 }
+.bloque_productos .producto:hover{
+    transform: scale(1.2);
+    transition: .8s ;
+}
+
 /*version para ordenador*/
 
 @media (min-width:1000px) {
@@ -372,104 +377,7 @@ footer .derechos h4{
     }
 }
 
-/*--------------page_redes--------------------------*/
-.redes{
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-}
-.redes .instagram {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
 
-/*--------------page_redes--------------------------*/
-.redes{
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-}
- .title {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 20px;
-}
- .title h2{
-    text-align: center;
-    font-size: 4rem;
-    text-decoration: underline ;
-    color: black;
-    font-weight: bold;    
-    padding-left: 10px;
-}
-.redes .instagram {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.redes .instagram .nombre_red{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.redes .instagram .nombre_red h3{
-    font-size: 2rem;
-    text-decoration: underline ;
-    color: black;
-    font-weight: bold;    
-
-}
-.redes .instagram .icono{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    filter: drop-shadow(0 0 20px #c12992);
-
-}
-.redes .instagram .icono:hover{
-    transform: scale(1.1);
-    transition: .8s;
-}
-
-
-.redes .instagram .icono img{
-    height: 300px;
-}
-.redes .youtube {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-.redes .youtube .nombre_red{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.redes .youtube .nombre_red h3{
-    font-size: 2rem;
-    text-decoration: underline ;
-    color: black;
-    font-weight: bold;    
-
-}
-.redes .youtube .icono{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    filter: drop-shadow(0 0 20px #ff0000);
-
-}
-.redes .youtube .icono:hover{
-    transform: scale(1.1);
-    transition: .8s;
-}
 /*--------------page_redes--------------------------*/
 .redes{
     display: flex;
