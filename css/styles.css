@@ -450,7 +450,9 @@ footer .derechos h4{
     transition: .8s;
 }
 .redes .instagram .icono img{
-    width: 100%;
+    max-width: 250px;   
+    min-width: 170px;
+
 }
 .redes .youtube {
     display: flex;
@@ -481,7 +483,8 @@ footer .derechos h4{
     transition: .8s;
 }
 .redes .youtube .icono img{
-    width: 100%;
+    max-width: 250px;   
+    min-width: 170px;
 }
 .redes .whatsapp {
     display: flex;
@@ -511,7 +514,9 @@ footer .derechos h4{
     transition: .8s;
 }
 .redes .whatsapp .icono img{
-    width: 100%;
+    max-width: 250px;   
+    min-width: 170px;
+
 }
 
 /*version para ordenador*/
