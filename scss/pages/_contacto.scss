@@ -1,24 +1,15 @@
 .info_contacto{
-    display: flex;
+    @include flex-content(column);
     margin: 10px;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
 
     & .bloque_form{
-        display: flex;
+        @include flex-content(column);
         width: 100%;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;    
         background-color: $color-terciario;
         border-radius: 30px;
 
         & .nombre{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            @include flex-content(column);
             padding: 10px;
 
             & .dato{
@@ -38,10 +29,8 @@
             }
         }
         & .apellido{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            @include flex-content(column);
+
             padding: 10px;
 
             & .dato{
@@ -61,10 +50,8 @@
             }
         }
         & .correo{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            @include flex-content(column);
+
             padding: 10px;
 
             & .dato{
@@ -84,10 +71,8 @@
             }
         }
         & .espacio_razon{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            @include flex-content(column);
+
             padding: 10px;
 
             & .dato{
@@ -109,10 +94,8 @@
             }
         }
         & .terminos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            @include flex-content(column);
+
             padding: 10px;
 
             & .checkbox{
@@ -132,9 +115,8 @@
             }
         }
         & .summit{
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            @include flex-content(grow);
+
             padding: 10px;
 
             & .btn-enviar{

@@ -5,10 +5,8 @@
 
 
     &--nuevos_avances{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-items: center;
+        @include flex-content(column);
+
         margin: 10px;
         background-color: $color-primario;
         border-radius: 30px;
@@ -26,11 +24,8 @@
             }
         }
         &--bloque{
-        display: flex;
-        padding: 10px;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
+            @include flex-content(column);
+            padding: 10px;
         
         & .parrafo{
             display: flex;
@@ -54,10 +49,8 @@
         }
     }
     &--ultimo_lanzamiento{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-items: center;
+        @include flex-content(column);
+
         margin: 10px;
         background-color: $color-primario;
         border-radius: 30px;
@@ -74,11 +67,9 @@
             }
         }
         &--bloque{
-            display: flex;
+            @include flex-content(column);
+
             padding: 10px;
-            align-content: center;
-            justify-content: center;
-            flex-direction: column;
             
             & .parrafo{
                 display: flex;

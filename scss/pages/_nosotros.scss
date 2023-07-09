@@ -1,9 +1,7 @@
 .informacion_nosotros{
+    @include flex-content(column);
     margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 
     & .sub_titulo{
         display: flex;

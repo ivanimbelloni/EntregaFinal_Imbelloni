@@ -19,3 +19,9 @@ body {
     
 }
 
+@mixin flex-content($flex-direction){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}

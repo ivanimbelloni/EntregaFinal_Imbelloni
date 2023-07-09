@@ -1,30 +1,29 @@
 header{
-    display: flex;
-    flex-direction: column;
+    @include flex-content(column);
     background-color: $color-primario;
     padding:  20px 20px 0px 20px;
 
     & .logo_header{
-        display: flex;
-        justify-content: center;
+        @include flex-content(row);
+
 
         & img{ 
-            display: flex;
+            @include flex-content(row);
             max-width: 100%;
             background-color: $color-primario;
-            justify-content: center;
-            align-items: center;
+
         }
     }
     & .header_menu{
         margin: 10px;
+        width: 100%;
 
         & #check-menu{
             display: none;
         }
         #check-menu:checked ~ .nav-link{
-            display: flex;
-            justify-content: center;
+            @include flex-content(column);
+
             width: 100%;
             height: auto;
         }
@@ -54,21 +53,20 @@ header{
             padding: 10px;
         
             & ul{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex-content(column);
+
                 width: 100%; 
                 gap: 10px;
                 padding: 0px;
                 list-style: none;
 
                 & li {
-                    display: flex;
-                    border-radius: 7px ;
-                    padding:  5px 7px;
+                    @include flex-content(column);
+                    width: 100%;
+                    border-radius: 20px ;
+                    padding:  5px 10px;
                     margin: 10px;
                     background-color: $color-secundario;
-                    justify-content: center;
                 
                     &:hover{
                         transition: 0.7s;
@@ -97,14 +95,11 @@ header{
             }
             & .nav-link{
                 & ul{
+                    @include flex-content(row);
                     width: 70%;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 5px;
+                    flex-grow: 1;
 
                     & li{
-                        flex-grow: 1;
                         padding: 5px 5px
                     }
                 }
