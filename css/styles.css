@@ -203,6 +203,7 @@ footer .derechos {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  width: 100%;
 }
 footer .derechos h4 {
   font-weight: lighter;
