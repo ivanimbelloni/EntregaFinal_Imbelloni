@@ -1,0 +1,130 @@
+
+
+.sec_noticias{
+    margin: 0px auto;
+
+
+    &--nuevos_avances{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        margin: 10px;
+        background-color: $color-primario;
+        border-radius: 30px;
+    
+
+        & .sub_titulo{
+            display: flex;
+            justify-content: center;
+        
+            & h3{
+                font-size: 1.2rem;
+                    text-decoration: underline ;
+                    color: black;
+                    font-weight: bold;
+            }
+        }
+        &--bloque{
+        display: flex;
+        padding: 10px;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        & .parrafo{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+    
+            & p{
+                font-size: 0.8rem;
+                font-weight: 500;
+                text-align: justify;
+            
+            }
+            }
+        & .imagen{
+            display: flex;
+            justify-content: center;
+            & img{
+                width: auto;
+            }
+            }
+        }
+    }
+    &--ultimo_lanzamiento{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        margin: 10px;
+        background-color: $color-primario;
+        border-radius: 30px;
+
+        & .sub_titulo{
+            display: flex;
+            justify-content: center;
+        
+            & h3{
+                font-size: 1.2rem;
+                    text-decoration: underline ;
+                    color: black;
+                    font-weight: bold;
+            }
+        }
+        &--bloque{
+            display: flex;
+            padding: 10px;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            & .parrafo{
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+        
+                & p{
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    text-align: justify;
+                
+                }
+            }
+            & .imagen{
+                display: flex;
+                justify-content: center;
+                & img{
+                    width: auto;
+                }
+            }
+            }
+    }
+}
+@media (min-width:1000px){
+    .sec_noticias{
+        &--nuevos_avances{
+            &--bloque{
+                flex-direction: row;
+            }
+            & .parrafo{
+                padding-right: 40px;
+            }
+            & .imagen{
+                padding-right: 40px;
+            }
+        }
+        &--ultimo_lanzamiento{
+            &--bloque{
+                flex-direction: row;
+            }
+            & .parrafo{
+                padding-right: 40px;
+            }
+            & .imagen{
+                padding-right: 40px;
+            }
+        }
+    }
+}

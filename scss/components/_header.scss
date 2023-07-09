@@ -1,0 +1,114 @@
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primario;
+    padding: 20px;
+
+    & .logo_header{
+        display: flex;
+        justify-content: center;
+
+        & img{ 
+            display: flex;
+            max-width: 100%;
+            background-color: $color-primario;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    & .header_menu{
+        margin: 10px;
+
+        & #check-menu{
+            display: none;
+        }
+        #check-menu:checked ~ .nav-link{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+        }
+
+        & .menu_icon{
+            display: flex;
+            padding: 10px;
+            width: 100%;
+            align-items: center;
+            justify-content: start;
+        
+            & label{
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
+            }
+        
+        }
+
+        & .nav-link{
+            width: 100%;
+            background-color: $color-primario ;
+            position: absolute;
+            display: none;
+            right: 0;
+            z-index: 2;
+            padding: 10px;
+        
+            & ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%; 
+                gap: 10px;
+                padding: 0px;
+                list-style: none;
+
+                & li {
+                    display: flex;
+                    border-radius: 7px ;
+                    padding:  5px 7px;
+                    margin: 10px;
+                    background-color: $color-secundario;
+                    justify-content: center;
+                
+                    &:hover{
+                        transition: 0.7s;
+                        background-color: $color-terciario;
+
+                    }
+                    & a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: $color-font ;
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+            
+        }
+    
+    }
+
+}
+@media (min-width:1000px) {
+    header{
+        & .header_menu{
+            & .menu_icon{
+                padding: 0px 15% 0px 15%;
+            }
+            & .nav-link{
+                & ul{
+                    width: 70%;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+
+                    & li{
+                        flex-grow: 1;
+                        padding: 5px 5px
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.redes{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+    & .instagram{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        &--nombre{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            & h3{
+                font-size: 2rem;
+                text-decoration: underline ;
+                color: $color-font;
+                font-weight: bold;   
+            }
+        }
+        &--icono{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            filter: drop-shadow(0 0 20px #c12992);
+
+            &:hover{
+                transform: scale(1.1);
+                transition: .8s;
+            }
+
+            & a {
+                & img{
+                    max-width: 250px;   
+                    min-width: 170px;
+                }
+            }
+        }    
+    }
+    & .youtube{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        &--nombre{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            & h3{
+                font-size: 2rem;
+                text-decoration: underline ;
+                color: $color-font;
+                font-weight: bold;   
+            }
+        }
+        &--icono{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            filter: drop-shadow(0 0 20px #ff0000);
+
+            &:hover{
+                transform: scale(1.1);
+                transition: .8s;
+            }
+
+            & a {
+                & img{
+                    max-width: 250px;   
+                    min-width: 170px;
+                }
+            }
+        }    
+    }
+    & .whatsapp{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        &--nombre{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            & h3{
+                font-size: 2rem;
+                text-decoration: underline ;
+                color: $color-font;
+                font-weight: bold;   
+            }
+        }
+        &--icono{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            filter: drop-shadow(0 0 20px #01e676);
+
+            &:hover{
+                transform: scale(1.1);
+                transition: .8s;
+            }
+
+            & a {
+                & img{
+                    max-width: 250px;   
+                    min-width: 170px;
+                }
+            }
+        }    
+    }
+        & .whatsapp{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        &--nombre{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            & h3{
+                font-size: 2rem;
+                text-decoration: underline ;
+                color: $color-font;
+                font-weight: bold;   
+            }
+        }
+        &--icono{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            filter: drop-shadow(0 0 20px #01e676);
+
+            &:hover{
+                transform: scale(1.1);
+                transition: .8s;
+            }
+
+            & img{
+                max-width: 250px;   
+                min-width: 170px;
+            }
+        }    
+    }
+}
+@media (min-width:1000px) {
+    .redes{
+        flex-direction:row ;
+        flex-grow: 1;
+        align-content:center;
+    }
+}
