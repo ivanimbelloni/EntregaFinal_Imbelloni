@@ -496,38 +496,6 @@ footer .derechos h4 {
   max-width: 250px;
   min-width: 170px;
 }
-.redes .whatsapp {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.redes .whatsapp--nombre {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.redes .whatsapp--nombre h3 {
-  font-size: 2rem;
-  text-decoration: underline;
-  color: black;
-  font-weight: bold;
-}
-.redes .whatsapp--icono {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  filter: drop-shadow(0 0 20px #01e676);
-}
-.redes .whatsapp--icono:hover {
-  transform: scale(1.1);
-  transition: 0.8s;
-}
-.redes .whatsapp--icono img {
-  max-width: 250px;
-  min-width: 170px;
-}
-
 @media (min-width: 1000px) {
   .redes {
     flex-direction: row;
