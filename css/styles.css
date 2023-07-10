@@ -3,6 +3,8 @@
   box-sizing: border-box;
   margin: 0px;
   font-family: "PT Sans", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #b0c2f2 white;
 }
 
 html {
@@ -91,7 +93,7 @@ header .header_menu .nav-link ul li {
   width: 100%;
   border-radius: 20px;
   padding: 5px 10px;
-  margin: 10px;
+  margin: 5px;
   background-color: #b0c2f2;
 }
 header .header_menu .nav-link ul li:hover {

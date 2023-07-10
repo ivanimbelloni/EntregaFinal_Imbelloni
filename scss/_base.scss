@@ -7,6 +7,9 @@ $color-font:black;
     box-sizing: border-box;
     margin: 0px;
     font-family: 'PT Sans', sans-serif;
+    
+    scrollbar-width:thin;
+    scrollbar-color: $color-secundario white;
 
 }
 html{
