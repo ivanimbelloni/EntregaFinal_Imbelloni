@@ -21,27 +21,34 @@ header{
         & #check-menu{
             display: none;
         }
-        #check-menu:checked ~ .nav-link{
+        & #check-menu:checked ~ .nav-link{
             @include flex-content(column);
 
             width: 100%;
             height: auto;
         }
-
+        & #check-menu:checked ~ .menu_icon #close{
+            display: block;
+        }
+        & #check-menu:checked ~ .menu_icon #open{
+            display: none;
+        }
         & .menu_icon{
             display: flex;
-            padding: 10px;
             width: 100%;
+            height: 48px;
             align-items: center;
             justify-content: start;
-        
-            & label{
-                width: 48px;
-                height: 48px;
-                cursor: pointer;
+            
+            &  #close{
+                display: none;
+                }           
+            &  #open{
+                display: block;
             }
-        
         }
+        
+        
 
         & .nav-link{
             width: 100%;
