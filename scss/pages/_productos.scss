@@ -43,6 +43,15 @@
         }
     }
 }
+@media (min-width:768px) {
+    .bloque_productos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        padding: 10px;
+        
+    }
+}
 @media (min-width:1000px) {
     .bloque_productos {
         display: grid;
