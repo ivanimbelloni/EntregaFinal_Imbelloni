@@ -21,7 +21,7 @@ footer{
             & li{
                 @include flex-content(row);
                 background-color: $color-secundario;
-                border-radius: 10px ;
+                border-radius: 5px ;
                 padding:  5px 7px;
                 margin: 10px;
                 width: 100%;
