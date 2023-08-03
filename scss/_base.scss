@@ -1,0 +1,31 @@
+$color-primario: #84b6f4;
+$color-secundario:#b0c2f2;
+$color-terciario: #7b9bf1;
+$color-font:black;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+    
+    scrollbar-width:thin;
+    scrollbar-color: $color-secundario white;
+
+}
+html{
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 320px;
+
+}
+
+@mixin flex-content($flex-direction){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}
